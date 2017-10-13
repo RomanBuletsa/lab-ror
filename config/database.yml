@@ -20,6 +20,13 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
+
+
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: postgresql-spherical-16209_production
+  username: postgresql-spherical-16209
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
