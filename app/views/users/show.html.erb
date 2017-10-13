@@ -1,5 +1,8 @@
 <h1>Hello,<%= @user.firstname%></h1>
 <p>Here is your params</p>
+
+<%= image_tag @user.avatar.url(:medium) %><br />
+
 <%= @user.firstname  %><br />
 <%= @user.lastname  %><br />
 <%= @user.email  %><br />

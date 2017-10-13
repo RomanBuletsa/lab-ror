@@ -44,7 +44,7 @@ def update
 private 
 
 def user_params
-    params.require(:user).permit(:lastname, :firstname, :password, :email)
+    params.require(:user).permit(:lastname, :firstname, :password, :email, :avatar)
  end
 
 def user_session

@@ -17,6 +17,9 @@
 <p><%= f.label "Gender" %></p>
 <%= f.select :gender, ['male','female'] %><br />
 
+<p><%= f.label :avatar %></p>
+<%= f.file_field :avatar %>
+
 <p><%= f.label "Password" %></p>
 <%= f.password_field :password %><br />
 
